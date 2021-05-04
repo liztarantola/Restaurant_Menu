@@ -1,26 +1,16 @@
-package restaurant;
+package restaurantpkg;
 
 public class MenuItem {
-    private String name;
     private String description;
     private double price;
     private String category;
     private boolean isNew;
 
-    public MenuItem(String name, String description, double price, String category, boolean isNew) {
-        this.name = name;
+    public MenuItem(String description, double price, String category, boolean isNew) {
         this.description = description;
         this.price = price;
         this.category = category;
         this.isNew = isNew;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
     }
 
     public String getDescription() {
